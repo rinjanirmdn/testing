@@ -55,6 +55,17 @@
 <body>
   <a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
 
+  <!-- ============================ BILAH INFORMASI ============================ -->
+  <div class="topbar on-dark">
+    <div class="container topbar__inner">
+      <p>Melayani korporasi, BUMN, dan instansi pemerintah di seluruh Indonesia</p>
+      <ul>
+        <li><span class="topbar__label">Telepon</span> <span data-placeholder="NOMOR_TELEPON">(021) 5550 0123</span></li>
+        <li><span class="topbar__label">Email</span> <span data-placeholder="EMAIL_PERUSAHAAN">info@sinergiacara.co.id</span></li>
+      </ul>
+    </div>
+  </div>
+
   <!-- ============================ HEADER ============================ -->
   <header class="site-header">
     <div class="container site-header__inner">
@@ -68,9 +79,9 @@
       </a>
       <nav class="nav" aria-label="Navigasi utama">
         <ul>
-            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
             <li><a href="#layanan">Layanan</a></li>
-            <li><a href="#metodologi">Metodologi</a></li>
+            <li><a href="#metodologi">Cara Kerja</a></li>
             <li><a href="#portofolio">Portofolio</a></li>
             <li><a href="#kapabilitas">Legalitas</a></li>
             <li><a href="#tim">Tim</a></li>
@@ -79,7 +90,8 @@
       </nav>
       <div class="header-actions">
         <a class="btn btn--accent" href="#kontak">Ajukan Penawaran</a>
-        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu-mobile" aria-label="Buka menu navigasi">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu-mobile" >
+          <span class="nav-toggle__label">Menu</span>
           <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7h18M3 12h18M3 17h18"/></svg><svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19"/></svg>
         </button>
       </div>
@@ -87,9 +99,9 @@
     <div class="mobile-nav" id="menu-mobile" hidden>
       <nav class="container" aria-label="Navigasi utama (mobile)">
         <ul>
-          <li><a href="#tentang">Tentang <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a></li>
+          <li><a href="#tentang">Tentang Kami <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a></li>
           <li><a href="#layanan">Layanan <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a></li>
-          <li><a href="#metodologi">Metodologi <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a></li>
+          <li><a href="#metodologi">Cara Kerja <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a></li>
           <li><a href="#portofolio">Portofolio <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a></li>
           <li><a href="#kapabilitas">Legalitas <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a></li>
           <li><a href="#tim">Tim <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a></li>
@@ -684,7 +696,47 @@
       </div>
     </section>
 
-    <!-- ============================ 08 KONTAK ============================ -->
+    <!-- ============================ 08 PERTANYAAN UMUM ============================ -->
+    <section id="pertanyaan" class="section" aria-labelledby="pertanyaan-judul" data-placeholder="faq">
+      <div class="container">
+        <div class="grid-12 faq">
+          <header class="faq__head reveal">
+            <div class="sec-meta">
+              <span class="sec-num" aria-hidden="true">08</span>
+              <span class="sec-dash" aria-hidden="true"></span>
+              <p class="eyebrow">Pertanyaan Umum</p>
+            </div>
+            <h2 class="sec-title" id="pertanyaan-judul">Hal yang sering ditanyakan panitia.</h2>
+            <p class="sec-intro">Belum menemukan jawaban yang Anda cari? Sampaikan pertanyaan Anda melalui formulir di bawah.</p>
+            <a class="link-arrow" href="#kontak">Ajukan pertanyaan <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a>
+          </header>
+          <div class="faq__list">
+            <details class="faq__item" open>
+              <summary><span>Berapa lama waktu persiapan yang ideal?</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 9l7 7 7-7"/></svg></summary>
+              <p>Untuk rapat kerja atau konferensi berskala besar, waktu persiapan yang ideal adalah enam sampai delapan minggu sebelum hari pelaksanaan. Bila jadwal Anda lebih mendesak, sampaikan kepada kami; kami akan menilai kelayakannya secara terbuka.</p>
+            </details>
+            <details class="faq__item">
+              <summary><span>Apakah dapat mengikuti proses pengadaan atau tender instansi?</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 9l7 7 7-7"/></svg></summary>
+              <p>Ya. Kami menyiapkan dokumen kualifikasi dan dokumen penawaran sesuai metode pengadaan yang digunakan instansi Anda, serta mengikuti tahapan yang ditetapkan panitia.</p>
+            </details>
+            <details class="faq__item">
+              <summary><span>Bagaimana anggaran disusun dan dikendalikan?</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 9l7 7 7-7"/></svg></summary>
+              <p>Anggaran disusun dalam bentuk rincian anggaran biaya per pos pekerjaan. Setiap perubahan lingkup atau biaya hanya dilakukan melalui persetujuan tertulis dari panitia.</p>
+            </details>
+            <details class="faq__item">
+              <summary><span>Apakah bisa menangani sebagian pekerjaan saja?</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 9l7 7 7-7"/></svg></summary>
+              <p>Bisa. Selain paket menyeluruh, kami dapat mendukung bagian tertentu saja, misalnya produksi panggung dan multimedia, registrasi peserta, atau siaran hybrid.</p>
+            </details>
+            <details class="faq__item">
+              <summary><span>Apa yang kami terima setelah acara selesai?</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 9l7 7 7-7"/></svg></summary>
+              <p>Laporan pelaksanaan, dokumentasi foto dan video, rekapitulasi kehadiran peserta, serta dokumen pertanggungjawaban administrasi sesuai ketentuan lembaga Anda.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 09 KONTAK ============================ -->
     <section id="kontak" class="section contact on-dark" aria-labelledby="kontak-judul">
       <div class="contact__bg" aria-hidden="true" data-placeholder="foto:latar-kontak">
         <img src="assets/images/cta/latar-acara.jpg" alt="" width="700" height="454" loading="lazy" decoding="async">
@@ -693,12 +745,18 @@
         <div class="contact__grid grid-12">
           <div class="contact__info">
             <div class="sec-meta">
-              <span class="sec-num" aria-hidden="true">08</span>
+              <span class="sec-num" aria-hidden="true">09</span>
               <span class="sec-dash" aria-hidden="true"></span>
               <p class="eyebrow">Ajukan Penawaran</p>
             </div>
             <h2 id="kontak-judul">Sampaikan rencana acara Anda.</h2>
             <p class="contact__intro">Isi formulir berikut. Tim kami akan menghubungi Anda untuk menjadwalkan konsultasi awal dan menyiapkan penawaran sesuai kebutuhan.</p>
+
+            <ol class="contact__steps" aria-label="Yang terjadi setelah Anda mengirim formulir">
+              <li><strong>Kami menghubungi Anda</strong> paling lambat satu hari kerja.</li>
+              <li><strong>Konsultasi awal</strong> untuk memahami kebutuhan acara.</li>
+              <li><strong>Penawaran tertulis</strong> beserta rincian anggaran.</li>
+            </ol>
 
             <div class="contact__direct">
               <h3 class="eyebrow">Kontak langsung</h3>
@@ -813,9 +871,9 @@
         <nav class="footer-col" aria-label="Navigasi footer">
           <h2>Navigasi</h2>
           <ul>
-              <li><a href="#tentang">Tentang</a></li>
+              <li><a href="#tentang">Tentang Kami</a></li>
               <li><a href="#layanan">Layanan</a></li>
-              <li><a href="#metodologi">Metodologi</a></li>
+              <li><a href="#metodologi">Cara Kerja</a></li>
               <li><a href="#portofolio">Portofolio</a></li>
               <li><a href="#kapabilitas">Legalitas</a></li>
               <li><a href="#tim">Tim</a></li>
@@ -866,6 +924,14 @@
       </div>
     </div>
   </footer>
+
+  <div class="mobile-cta is-hidden" id="cta-bawah">
+    <a class="btn btn--accent" href="#kontak">Ajukan Penawaran <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a>
+  </div>
+  <a class="to-top" id="ke-atas" href="#beranda" hidden>
+    <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20V5M6.5 10.5L12 5l5.5 5.5"/></svg>
+    <span>Ke atas</span>
+  </a>
 
   <script src="assets/js/main.js" defer></script>
 </body>

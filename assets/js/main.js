@@ -16,7 +16,7 @@
   function setMenu(open) {
     menu.hidden = !open;
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "Tutup menu navigasi" : "Buka menu navigasi");
+    toggle.querySelector(".nav-toggle__label").textContent = open ? "Tutup" : "Menu";
   }
 
   if (toggle && menu) {
@@ -33,6 +33,43 @@
       }
     });
   }
+
+  /* ---------- Penanda menu aktif, tombol "Ke atas", dan CTA bawah ---------- */
+  var navLinks = document.querySelectorAll(".nav a");
+  var toTop = document.getElementById("ke-atas");
+  var bottomCta = document.getElementById("cta-bawah");
+  var contactSection = document.getElementById("kontak");
+
+  function onScroll() {
+    // Section aktif = section terakhir yang bagian atasnya sudah melewati header
+    var current = "";
+    navLinks.forEach(function (link) {
+      var section = document.querySelector(link.getAttribute("href"));
+      if (section && section.getBoundingClientRect().top <= 140) current = link.getAttribute("href");
+    });
+    navLinks.forEach(function (link) {
+      if (link.getAttribute("href") === current) link.setAttribute("aria-current", "true");
+      else link.removeAttribute("aria-current");
+    });
+
+    if (toTop) toTop.hidden = window.scrollY < 700;
+
+    // Sembunyikan CTA bawah saat formulir kontak sudah terlihat
+    if (bottomCta && contactSection) {
+      var rect = contactSection.getBoundingClientRect();
+      bottomCta.classList.toggle("is-hidden", window.scrollY < 500 || rect.top < window.innerHeight * 0.75);
+    }
+  }
+  var ticking = false;
+  window.addEventListener("scroll", function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      onScroll();
+      ticking = false;
+    });
+  }, { passive: true });
+  onScroll();
 
   /* ---------- 2. Filter portofolio ---------- */
   var filters = document.querySelectorAll(".filter");
