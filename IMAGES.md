@@ -1,50 +1,54 @@
-# Daftar Gambar yang Dibutuhkan
+# Foto di Website
 
-Selama foto belum ada, situs menampilkan kotak placeholder abu-abu berisi deskripsi foto.
+Semua foto ada di `assets/images/` dan dipanggil dari `index.html`. Untuk mengganti
+sebuah foto, timpa filenya dengan nama yang sama (atau ubah `src` pada `<img>` terkait)
+dan sesuaikan teks `alt`.
 
-Cara memasang satu foto:
+> **Status foto saat ini: sementara.** Sembilan file di bawah dibuat dari tiga gambar
+> contoh yang diberikan pemilik proyek, dipotong sesuai kebutuhan tata letak. Asal-usul
+> dan lisensinya belum diverifikasi, dan salah satu gambar sumber memuat logo pihak lain
+> (berada di luar area potongan). **Ganti dengan dokumentasi acara sendiri atau foto stok
+> berlisensi jelas sebelum situs dipakai sungguhan.**
 
-1. Taruh file di `assets/images/` dengan **nama file persis** seperti di tabel.
-2. Buka `index.html`, cari nama file tersebut. Di dekatnya ada baris `<img ...>` yang
-   diapit tanda komentar `<!-- FOTO: ...` dan `-->`. Hapus kedua tanda komentar itu
-   sehingga baris `<img>` aktif.
-3. Sesuaikan teks `alt` agar menggambarkan isi foto yang sebenarnya.
+## Daftar file
 
-## Ketentuan umum
+| File | Dipakai di | Rasio | Ukuran saat ini | Ukuran ideal |
+| --- | --- | --- | --- | --- |
+| `hero/hero-acara.jpg` | Latar penuh hero | bebas (lanskap) | 1199 × 685 | 2400 × 1350 |
+| `about/ballroom.jpg` | Tentang Kami | 4:3 | 736 × 552 | 1600 × 1200 |
+| `portfolio/konferensi.jpg` | Kartu portofolio + modal studi kasus | 3:2 | 1027 × 685 | 1500 × 1000 |
+| `portfolio/seremonial.jpg` | Kartu portofolio + bidang foto kutipan | 3:2 | 736 × 490 | 2400 × 1350 untuk bidang foto |
+| `portfolio/peluncuran.jpg` | Kartu portofolio | 3:2 | 600 × 400 | 1500 × 1000 |
+| `portfolio/pameran.jpg` | Kartu portofolio | 3:2 | 736 × 490 | 1500 × 1000 |
+| `portfolio/gathering.jpg` | Kartu portofolio | 3:2 | 681 × 454 | 1500 × 1000 |
+| `portfolio/hybrid.jpg` | Kartu portofolio | 3:2 | 639 × 426 | 1500 × 1000 |
+| `cta/latar-acara.jpg` | Latar section Kontak | bebas (lanskap) | 700 × 454 | 2400 × 1030 |
 
-- Format: JPG (kualitas 80–85). Bila memakai WebP, sesuaikan nama file di `index.html`.
-- Ukuran file: usahakan di bawah 400 KB per gambar — foto ditampilkan apa adanya, tanpa optimasi otomatis.
-- Pangkas (crop) sesuai rasio yang tertera agar komposisi tidak terpotong tak terduga.
-- Hindari foto yang memuat logo merek, wajah tokoh yang dikenali, atau atribut instansi nyata.
-- Periksa lisensi setiap foto stok (boleh dipakai komersial, tanpa kewajiban atribusi atau penuhi atribusinya).
+Catatan:
 
-## Daftar gambar
+- Foto saat ini beresolusi rendah. Latar hero dan bidang foto akan tampak lebih tajam
+  dengan file selebar 2400 px.
+- Beberapa kartu portofolio memakai potongan dari foto yang sama, dan isinya tidak selalu
+  cocok dengan kategorinya (mis. Pameran, Hybrid). Ini hanya pengisi tampilan.
+- Foto latar (hero, bidang kutipan, kontak) tertutup overlay navy agar teks putih tetap
+  terbaca; pilih foto dengan komposisi tenang.
 
-| Kunci | File yang diharapkan | Rasio | Ukuran minimum (px) | Dipakai di | Saran kata kunci pencarian |
-| --- | --- | --- | --- | --- | --- |
-| `hero` | `assets/images/hero/hero-konferensi.jpg` | 4:5 | 1600 × 2000 | Hero, kolom kanan | `conference hall stage`, `formal ballroom event`, `corporate conference audience`, `auditorium seminar` |
-| `about` | `assets/images/about/tim-perencanaan.jpg` | 4:3 | 1600 × 1200 | Tentang Kami | `event planning team meeting`, `floor plan discussion`, `project team office planning` |
-| `konferensi` | `assets/images/portfolio/konferensi.jpg` | 3:2 | 1500 × 1000 | Kartu portofolio + modal studi kasus | `business conference`, `plenary session`, `seminar audience LED screen` |
-| `seremonial` | `assets/images/portfolio/seremonial.jpg` | 3:2 | 1500 × 1000 | Kartu portofolio | `inauguration ceremony stage`, `ribbon cutting`, `official ceremony podium` |
-| `peluncuran` | `assets/images/portfolio/peluncuran.jpg` | 3:2 | 1500 × 1000 | Kartu portofolio | `product launch event stage`, `keynote stage lighting`, `corporate launch screen` |
-| `pameran` | `assets/images/portfolio/pameran.jpg` | 3:2 | 1500 × 1000 | Kartu portofolio | `exhibition hall booths`, `trade show floor`, `expo visitors` |
-| `gathering` | `assets/images/portfolio/gathering.jpg` | 3:2 | 1500 × 1000 | Kartu portofolio | `town hall meeting employees`, `company gathering audience`, `corporate all hands` |
-| `hybrid` | `assets/images/portfolio/hybrid.jpg` | 3:2 | 1500 × 1000 | Kartu portofolio | `live streaming control room`, `video switcher operator`, `broadcast production desk` |
-| `latar-kontak` | `assets/images/cta/latar-panggung.jpg` | 21:9 | 2400 × 1030 | Latar section Kontak (di bawah overlay gelap) | `empty stage lights`, `event venue setup`, `stage truss dark` |
+## Ketentuan foto pengganti
 
-Catatan per gambar:
+- Format JPG kualitas 80–85, usahakan di bawah 400 KB per file.
+- Hindari logo merek lain, nama acara pihak lain, dan wajah tokoh yang dikenali.
+- Pastikan lisensinya mengizinkan penggunaan komersial.
+- Saran kata kunci di situs foto stok: `conference hall stage`, `formal ballroom event`,
+  `inauguration ceremony podium`, `product launch stage`, `exhibition hall booths`,
+  `town hall meeting audience`, `live streaming control room`.
 
-- **`hero`** — tampil potret di desktop, dan dipangkas menjadi 4:3 / 16:9 di mobile dan tablet. Letakkan subjek utama di tengah bingkai.
-- **`latar-kontak`** — hanya dekoratif (alt kosong) dan tertutup overlay navy 86–97%. Pilih foto dengan sedikit detail.
-- **Portofolio** — idealnya diganti dengan dokumentasi asli proyek. Selama masih foto stok, biarkan label "Visual ilustrasi" tampil (lihat README).
+## Label "Visual ilustrasi"
 
-## Gambar pratinjau tautan (Open Graph)
-
-Belum dipasang. Setelah domain final ada, siapkan `assets/images/og-image.jpg`
-(1200 × 630) dan aktifkan baris `og:image` yang dikomentari di bagian `<head>` `index.html`.
+Setiap kartu portofolio menampilkan label kecil "Visual ilustrasi". Hapus baris
+`<span class="badge">Visual ilustrasi</span>` pada kartu yang fotonya sudah berupa
+dokumentasi asli proyek tersebut.
 
 ## Logo klien
 
-Client wall saat ini berupa kotak "Logo Klien". Logo institusi hanya boleh dipasang
-setelah ada persetujuan tertulis dari pemiliknya. Saat itu tiba, taruh file di
-`assets/images/clients/` dan ganti isi kotak `logo-slot` di `index.html` dengan `<img>`.
+Client wall berisi label sektor anonim. Nama atau logo institusi hanya boleh dipasang
+setelah ada persetujuan tertulis dari pemiliknya.

@@ -49,7 +49,7 @@ misalnya `<span data-placeholder="NIB">1234567890123</span>`. Cari `data-placeho
 - [ ] **Tim:** empat nama dan profil fiktif
 - [ ] **Kontak dan alamat:** email, telepon, jam operasional, alamat kantor fiktif — setelah diisi, jadikan tautan `mailto:` / `tel:`
 - [ ] **Footer:** pernyataan kepatuhan, NIB, NPWP
-- [ ] **Foto:** foto stok berlisensi bebas (sumber di `IMAGES.md`) — ganti dengan dokumentasi asli, lalu hapus label `Visual ilustrasi` (baris `<span class="badge">`)
+- [ ] **Foto:** foto sementara yang lisensinya belum diverifikasi (lihat `IMAGES.md`) — ganti dengan dokumentasi sendiri atau foto stok berlisensi jelas, lalu hapus label `Visual ilustrasi` (baris `<span class="badge">`)
 - [ ] **Formulir** (`assets/js/main.js`): `submitInquiry()` masih simulasi — menampilkan pesan sukses tetapi tidak mengirim apa pun. GitHub Pages tidak punya server, jadi sambungkan ke layanan formulir atau API perusahaan (petunjuk ada di komentar fungsi)
 - [ ] **SEO** (`<head>`): hapus `noindex`, aktifkan `canonical` / `og:url` / `og:image` dengan domain final, lengkapi JSON-LD
 - [ ] **Pemeriksaan akhir:** Ctrl+F `data-placeholder` tidak lagi menemukan data yang belum ditinjau

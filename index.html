@@ -104,30 +104,20 @@
 
     <!-- ============================ HERO ============================ -->
     <section id="beranda" class="hero" aria-labelledby="beranda-judul">
-      <div class="hero__split">
-        <div class="hero__text rule-field on-dark">
-          <div class="hero__inner">
-            <p class="eyebrow hero__eyebrow">Event Management untuk Korporasi, BUMN, dan Pemerintah</p>
-            <h1 id="beranda-judul">Penyelenggara acara korporat dan kenegaraan yang tertib, terukur, dan akuntabel.</h1>
-            <p class="hero__sub">Kami mendampingi korporasi, BUMN, dan instansi pemerintah sejak perencanaan hingga pelaporan, dengan tata kelola yang rapi dan administrasi yang dapat dipertanggungjawabkan.</p>
-            <div class="hero__cta">
-              <a class="btn btn--accent" href="#kontak">Ajukan Penawaran <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a>
-              <a class="btn btn--light" href="#portofolio">Lihat Portofolio</a>
-            </div>
-          </div>
+      <div class="hero__stage on-dark">
+      <!-- Foto latar penuh (dekoratif). Ganti file assets/images/hero/hero-acara.jpg; lebar ideal 2400 px. -->
+      <div class="hero__bg" aria-hidden="true" data-placeholder="foto:hero">
+        <img src="assets/images/hero/hero-acara.jpg" alt="" width="1199" height="685" fetchpriority="high" decoding="async">
+      </div>
+      <div class="container hero__inner">
+        <p class="eyebrow hero__eyebrow">Event Management untuk Korporasi, BUMN, dan Pemerintah</p>
+        <h1 id="beranda-judul">Penyelenggara acara korporat dan kenegaraan yang tertib, terukur, dan akuntabel.</h1>
+        <p class="hero__sub">Kami mendampingi korporasi, BUMN, dan instansi pemerintah sejak perencanaan hingga pelaporan, dengan tata kelola yang rapi dan administrasi yang dapat dipertanggungjawabkan.</p>
+        <div class="hero__cta">
+          <a class="btn btn--accent" href="#kontak">Ajukan Penawaran <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a>
+          <a class="btn btn--light" href="#portofolio">Lihat Portofolio</a>
         </div>
-        <div class="hero__photo">
-          <div class="photo " data-placeholder="foto:hero">
-            <div class="photo-label" aria-hidden="true">
-              <strong>Placeholder foto · 4:5</strong>
-              <span>Ruang konferensi atau ballroom formal dengan panggung, tata cahaya rapi, dan peserta berbusana resmi. Tanpa logo merek yang terbaca.</span>
-              <code>assets/images/hero/hero-konferensi.jpg</code>
-            </div>
-            <!-- FOTO: setelah file ditaruh di assets/images/hero/hero-konferensi.jpg, hapus tanda komentar pada baris <img> di bawah ini.
-            <img src="assets/images/hero/hero-konferensi.jpg" alt="Suasana ruang konferensi formal dengan panggung utama dan deretan kursi peserta" fetchpriority="high" decoding="async">
-            -->
-          </div>
-        </div>
+      </div>
       </div>
 
       <!-- Strip kredibilitas: semua angka masih placeholder -->
@@ -160,15 +150,8 @@
         <div class="about grid-12 sec-body">
           <div class="about__photo reveal">
             <div class="photo photo--4x3" data-placeholder="foto:about">
-            <div class="photo-label" aria-hidden="true">
-              <strong>Placeholder foto · 4:3</strong>
-              <span>Tim kecil sedang rapat perencanaan: denah venue, laptop, dokumen rundown. Suasana kantor profesional.</span>
-              <code>assets/images/about/tim-perencanaan.jpg</code>
+              <img src="assets/images/about/ballroom.jpg" alt="Ballroom dengan panggung, layar LED, dan meja bundar yang tertata untuk acara resmi" width="736" height="552" loading="lazy" decoding="async">
             </div>
-            <!-- FOTO: setelah file ditaruh di assets/images/about/tim-perencanaan.jpg, hapus tanda komentar pada baris <img> di bawah ini.
-            <img src="assets/images/about/tim-perencanaan.jpg" alt="Tim perencana acara berdiskusi di meja kerja dengan denah tata ruang" loading="lazy" decoding="async">
-            -->
-          </div>
           </div>
           <div class="about__text reveal">
             <p>Acara institusi bukan sekadar soal panggung yang megah. Di baliknya ada protokol yang harus dihormati, anggaran yang harus dipertanggungjawabkan, dan reputasi lembaga yang harus dijaga.</p>
@@ -199,6 +182,17 @@
             <li class="reveal"><span class="num" aria-hidden="true">04</span><h4>Siaga</h4><p>Rencana cadangan disiapkan untuk setiap titik kritis, dari cuaca hingga kelistrikan.</p></li>
           </ul>
         </div>
+      </div>
+    </section>
+
+    <!-- ============================ BIDANG FOTO ============================ -->
+    <section class="band on-dark" aria-label="Komitmen kami">
+      <div class="band__bg" aria-hidden="true" data-placeholder="foto:bidang">
+        <img src="assets/images/portfolio/seremonial.jpg" alt="" width="736" height="490" loading="lazy" decoding="async">
+      </div>
+      <div class="container">
+        <p class="band__quote">Dari rapat pimpinan hingga seremoni kenegaraan, setiap detail kami kelola dengan satu standar: tertib, tepat waktu, dan dapat dipertanggungjawabkan.</p>
+        <a class="link-arrow" href="#metodologi">Lihat metodologi kerja <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg></a>
       </div>
     </section>
 
@@ -344,14 +338,8 @@
                 <!-- Hapus baris "Visual ilustrasi" di bawah bila foto sudah berupa dokumentasi asli proyek. -->
                 <span class="badge">Visual ilustrasi</span>
                 <div class="photo photo--3x2" data-placeholder="foto:konferensi">
-                  <div class="photo-label" aria-hidden="true">
-                    <strong>Placeholder foto · 3:2</strong>
-                    <code>assets/images/portfolio/konferensi.jpg</code>
-                  </div>
-                  <!-- FOTO: setelah file ditaruh di assets/images/portfolio/konferensi.jpg, hapus tanda komentar pada baris <img> di bawah ini.
-                  <img src="assets/images/portfolio/konferensi.jpg" alt="Rapat kerja dengan peserta duduk menghadap panggung dan layar presentasi" loading="lazy" decoding="async">
-                  -->
-                </div>
+              <img src="assets/images/portfolio/konferensi.jpg" alt="Peserta konferensi duduk di meja bundar menghadap panggung dan layar presentasi" width="1027" height="685" loading="lazy" decoding="async">
+            </div>
               </div>
               <div class="card__body">
                 <p class="eyebrow">Rapat Kerja &amp; Konferensi</p>
@@ -372,14 +360,8 @@
                 <!-- Hapus baris "Visual ilustrasi" di bawah bila foto sudah berupa dokumentasi asli proyek. -->
                 <span class="badge">Visual ilustrasi</span>
                 <div class="photo photo--3x2" data-placeholder="foto:seremonial">
-                  <div class="photo-label" aria-hidden="true">
-                    <strong>Placeholder foto · 3:2</strong>
-                    <code>assets/images/portfolio/seremonial.jpg</code>
-                  </div>
-                  <!-- FOTO: setelah file ditaruh di assets/images/portfolio/seremonial.jpg, hapus tanda komentar pada baris <img> di bawah ini.
-                  <img src="assets/images/portfolio/seremonial.jpg" alt="Panggung seremonial peresmian dengan podium dan dekorasi formal" loading="lazy" decoding="async">
-                  -->
-                </div>
+              <img src="assets/images/portfolio/seremonial.jpg" alt="Panggung acara resmi dengan podium, kursi panel, dan tata cahaya" width="736" height="490" loading="lazy" decoding="async">
+            </div>
               </div>
               <div class="card__body">
                 <p class="eyebrow">Seremonial &amp; Peresmian</p>
@@ -397,14 +379,8 @@
                 <!-- Hapus baris "Visual ilustrasi" di bawah bila foto sudah berupa dokumentasi asli proyek. -->
                 <span class="badge">Visual ilustrasi</span>
                 <div class="photo photo--3x2" data-placeholder="foto:peluncuran">
-                  <div class="photo-label" aria-hidden="true">
-                    <strong>Placeholder foto · 3:2</strong>
-                    <code>assets/images/portfolio/peluncuran.jpg</code>
-                  </div>
-                  <!-- FOTO: setelah file ditaruh di assets/images/portfolio/peluncuran.jpg, hapus tanda komentar pada baris <img> di bawah ini.
-                  <img src="assets/images/portfolio/peluncuran.jpg" alt="Panggung peluncuran produk dengan layar lebar dan tata cahaya" loading="lazy" decoding="async">
-                  -->
-                </div>
+              <img src="assets/images/portfolio/peluncuran.jpg" alt="Panggung peluncuran dengan layar presentasi dan tata cahaya berwarna" width="600" height="400" loading="lazy" decoding="async">
+            </div>
               </div>
               <div class="card__body">
                 <p class="eyebrow">Peluncuran Produk</p>
@@ -422,14 +398,8 @@
                 <!-- Hapus baris "Visual ilustrasi" di bawah bila foto sudah berupa dokumentasi asli proyek. -->
                 <span class="badge">Visual ilustrasi</span>
                 <div class="photo photo--3x2" data-placeholder="foto:pameran">
-                  <div class="photo-label" aria-hidden="true">
-                    <strong>Placeholder foto · 3:2</strong>
-                    <code>assets/images/portfolio/pameran.jpg</code>
-                  </div>
-                  <!-- FOTO: setelah file ditaruh di assets/images/portfolio/pameran.jpg, hapus tanda komentar pada baris <img> di bawah ini.
-                  <img src="assets/images/portfolio/pameran.jpg" alt="Aula pameran dengan deretan stan dan pengunjung" loading="lazy" decoding="async">
-                  -->
-                </div>
+              <img src="assets/images/portfolio/pameran.jpg" alt="Meja bundar dengan rangkaian bunga dan tata meja formal di ballroom" width="736" height="490" loading="lazy" decoding="async">
+            </div>
               </div>
               <div class="card__body">
                 <p class="eyebrow">Pameran</p>
@@ -447,14 +417,8 @@
                 <!-- Hapus baris "Visual ilustrasi" di bawah bila foto sudah berupa dokumentasi asli proyek. -->
                 <span class="badge">Visual ilustrasi</span>
                 <div class="photo photo--3x2" data-placeholder="foto:gathering">
-                  <div class="photo-label" aria-hidden="true">
-                    <strong>Placeholder foto · 3:2</strong>
-                    <code>assets/images/portfolio/gathering.jpg</code>
-                  </div>
-                  <!-- FOTO: setelah file ditaruh di assets/images/portfolio/gathering.jpg, hapus tanda komentar pada baris <img> di bawah ini.
-                  <img src="assets/images/portfolio/gathering.jpg" alt="Pertemuan townhall karyawan di aula dengan pembicara di panggung" loading="lazy" decoding="async">
-                  -->
-                </div>
+              <img src="assets/images/portfolio/gathering.jpg" alt="Aula besar dengan deretan meja bundar dan dekorasi kain di langit-langit" width="681" height="454" loading="lazy" decoding="async">
+            </div>
               </div>
               <div class="card__body">
                 <p class="eyebrow">Gathering &amp; Townhall</p>
@@ -472,14 +436,8 @@
                 <!-- Hapus baris "Visual ilustrasi" di bawah bila foto sudah berupa dokumentasi asli proyek. -->
                 <span class="badge">Visual ilustrasi</span>
                 <div class="photo photo--3x2" data-placeholder="foto:hybrid">
-                  <div class="photo-label" aria-hidden="true">
-                    <strong>Placeholder foto · 3:2</strong>
-                    <code>assets/images/portfolio/hybrid.jpg</code>
-                  </div>
-                  <!-- FOTO: setelah file ditaruh di assets/images/portfolio/hybrid.jpg, hapus tanda komentar pada baris <img> di bawah ini.
-                  <img src="assets/images/portfolio/hybrid.jpg" alt="Ruang kendali siaran dengan operator, monitor, dan perangkat streaming" loading="lazy" decoding="async">
-                  -->
-                </div>
+              <img src="assets/images/portfolio/hybrid.jpg" alt="Tamu undangan di meja bundar dengan layar presentasi di latar belakang" width="639" height="426" loading="lazy" decoding="async">
+            </div>
               </div>
               <div class="card__body">
                 <p class="eyebrow">Hybrid &amp; Virtual</p>
@@ -503,15 +461,8 @@
         <div class="modal__media">
           <span class="badge">Visual ilustrasi</span>
           <div class="photo photo--16x9" data-placeholder="foto:studi-kasus">
-            <div class="photo-label" aria-hidden="true">
-              <strong>Placeholder foto · 16:9</strong>
-              <span>Rapat kerja atau konferensi skala besar: peserta duduk formasi kelas/teater, layar LED, podium.</span>
-              <code>assets/images/portfolio/konferensi.jpg</code>
+              <img src="assets/images/portfolio/konferensi.jpg" alt="Peserta konferensi duduk di meja bundar menghadap panggung dan layar presentasi" width="1027" height="685" loading="lazy" decoding="async">
             </div>
-            <!-- FOTO: setelah file ditaruh di assets/images/portfolio/konferensi.jpg, hapus tanda komentar pada baris <img> di bawah ini.
-            <img src="assets/images/portfolio/konferensi.jpg" alt="Rapat kerja dengan peserta duduk menghadap panggung dan layar presentasi" loading="lazy" decoding="async">
-            -->
-          </div>
         </div>
         <div class="modal__body">
           <h2 id="studi-kasus-judul">Rapat Kerja Nasional — Sektor Energi</h2>
@@ -736,9 +687,7 @@
     <!-- ============================ 08 KONTAK ============================ -->
     <section id="kontak" class="section contact on-dark" aria-labelledby="kontak-judul">
       <div class="contact__bg" aria-hidden="true" data-placeholder="foto:latar-kontak">
-        <!-- FOTO LATAR (dekoratif): setelah file ditaruh di assets/images/cta/latar-panggung.jpg, hapus tanda komentar pada baris <img> di bawah ini.
-        <img src="assets/images/cta/latar-panggung.jpg" alt="" loading="lazy" decoding="async">
-        -->
+        <img src="assets/images/cta/latar-acara.jpg" alt="" width="700" height="454" loading="lazy" decoding="async">
       </div>
       <div class="container">
         <div class="contact__grid grid-12">
