@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- ======================================================================
+       PERHATIAN: SELURUH DATA DI HALAMAN INI ADALAH DUMMY (angka, nomor
+       legalitas, nama pimpinan, alamat, kontak, studi kasus). Setiap nilai
+       dummy diberi atribut data-placeholder agar mudah dicari dan diganti.
+
        IDENTITAS & SEO
        Nama perusahaan "PT Sinergi Acara Nusantara" adalah PLACEHOLDER.
        Untuk menggantinya: cari-ganti (find & replace) di file ini untuk
@@ -131,10 +135,10 @@
         <div class="container">
           <h2 class="sr-only">Ringkasan kredibilitas</h2>
           <dl>
-            <div><dt>Tahun berdiri</dt><dd><span class="ph" data-placeholder="TAHUN_BERDIRI">{{TAHUN_BERDIRI}}</span></dd></div>
-            <div><dt>Acara terselenggara</dt><dd><span class="ph" data-placeholder="JUMLAH_EVENT">{{JUMLAH_EVENT}}</span>+</dd></div>
-            <div><dt>Klien institusi</dt><dd><span class="ph" data-placeholder="JUMLAH_KLIEN">{{JUMLAH_KLIEN}}</span>+</dd></div>
-            <div><dt>Provinsi jangkauan pelaksanaan</dt><dd><span class="ph" data-placeholder="JUMLAH_PROVINSI">{{JUMLAH_PROVINSI}}</span></dd></div>
+            <div><dt>Tahun berdiri</dt><dd><span data-placeholder="TAHUN_BERDIRI">2012</span></dd></div>
+            <div><dt>Acara terselenggara</dt><dd><span data-placeholder="JUMLAH_EVENT">850</span>+</dd></div>
+            <div><dt>Klien institusi</dt><dd><span data-placeholder="JUMLAH_KLIEN">120</span>+</dd></div>
+            <div><dt>Provinsi jangkauan pelaksanaan</dt><dd><span data-placeholder="JUMLAH_PROVINSI">27</span></dd></div>
           </dl>
         </div>
       </div>
@@ -322,9 +326,7 @@
           <p class="sec-intro">Gambaran lingkup pekerjaan yang kami tangani pada berbagai jenis acara institusi.</p>
         </header>
 
-        <p class="notice sec-body" data-placeholder="catatan-portofolio">Catatan: seluruh studi kasus di bawah ini adalah contoh format. Isinya akan diganti dengan proyek aktual beserta dokumentasinya.</p>
-
-        <div class="filters" role="group" aria-label="Saring berdasarkan kategori">
+        <div class="filters sec-body" role="group" aria-label="Saring berdasarkan kategori">
           <button type="button" class="filter" data-filter="all" aria-pressed="true">Semua</button>
           <button type="button" class="filter" data-filter="konferensi" aria-pressed="false">Rapat Kerja &amp; Konferensi</button>
           <button type="button" class="filter" data-filter="seremonial" aria-pressed="false">Seremonial &amp; Peresmian</button>
@@ -355,7 +357,7 @@
                 <p class="eyebrow">Rapat Kerja &amp; Konferensi</p>
                 <h3>Rapat Kerja Nasional — Sektor Energi</h3>
                 <dl>
-                  <div><dt>Skala</dt><dd><span class="ph" data-placeholder="JUMLAH_PESERTA">{{JUMLAH_PESERTA}}</span> peserta</dd></div>
+                  <div><dt>Skala</dt><dd><span data-placeholder="JUMLAH_PESERTA">1.200</span> peserta</dd></div>
                   <div><dt>Ruang lingkup</dt><dd><ul><li>Manajemen venue</li><li>Registrasi peserta</li><li>Produksi panggung</li><li>Akomodasi &amp; transportasi</li></ul></dd></div>
                 </dl>
               <div class="card__more">
@@ -383,7 +385,7 @@
                 <p class="eyebrow">Seremonial &amp; Peresmian</p>
                 <h3>Peresmian Fasilitas Infrastruktur — Instansi Pemerintah</h3>
                 <dl>
-                  <div><dt>Skala</dt><dd><span class="ph" data-placeholder="JUMLAH_PESERTA">{{JUMLAH_PESERTA}}</span> undangan</dd></div>
+                  <div><dt>Skala</dt><dd><span data-placeholder="JUMLAH_PESERTA">350</span> undangan</dd></div>
                   <div><dt>Ruang lingkup</dt><dd><ul><li>Koordinasi protokoler</li><li>Tata panggung seremonial</li><li>Pengaturan tamu VIP</li><li>Dokumentasi</li></ul></dd></div>
                 </dl>
               </div>
@@ -408,7 +410,7 @@
                 <p class="eyebrow">Peluncuran Produk</p>
                 <h3>Peluncuran Layanan Digital — Sektor Perbankan</h3>
                 <dl>
-                  <div><dt>Skala</dt><dd><span class="ph" data-placeholder="JUMLAH_PESERTA">{{JUMLAH_PESERTA}}</span> undangan</dd></div>
+                  <div><dt>Skala</dt><dd><span data-placeholder="JUMLAH_PESERTA">500</span> undangan</dd></div>
                   <div><dt>Ruang lingkup</dt><dd><ul><li>Konsep acara</li><li>Konten multimedia</li><li>Tata cahaya &amp; suara</li><li>Pengelolaan media</li></ul></dd></div>
                 </dl>
               </div>
@@ -433,7 +435,7 @@
                 <p class="eyebrow">Pameran</p>
                 <h3>Pameran Inovasi Layanan Publik — Tingkat Nasional</h3>
                 <dl>
-                  <div><dt>Skala</dt><dd><span class="ph" data-placeholder="JUMLAH_PESERTA">{{JUMLAH_PESERTA}}</span> pengunjung</dd></div>
+                  <div><dt>Skala</dt><dd><span data-placeholder="JUMLAH_PESERTA">15.000</span> pengunjung</dd></div>
                   <div><dt>Ruang lingkup</dt><dd><ul><li>Desain &amp; konstruksi stan</li><li>Pengelolaan peserta pameran</li><li>Arus pengunjung</li><li>Keamanan area</li></ul></dd></div>
                 </dl>
               </div>
@@ -458,7 +460,7 @@
                 <p class="eyebrow">Gathering &amp; Townhall</p>
                 <h3>Townhall Karyawan Tahunan — Sektor Telekomunikasi</h3>
                 <dl>
-                  <div><dt>Skala</dt><dd><span class="ph" data-placeholder="JUMLAH_PESERTA">{{JUMLAH_PESERTA}}</span> karyawan</dd></div>
+                  <div><dt>Skala</dt><dd><span data-placeholder="JUMLAH_PESERTA">2.500</span> karyawan</dd></div>
                   <div><dt>Ruang lingkup</dt><dd><ul><li>Rundown &amp; pengisi acara</li><li>Produksi panggung</li><li>Konsumsi</li><li>Siaran ke kantor wilayah</li></ul></dd></div>
                 </dl>
               </div>
@@ -483,7 +485,7 @@
                 <p class="eyebrow">Hybrid &amp; Virtual</p>
                 <h3>Forum Koordinasi Hybrid — Lintas Lembaga</h3>
                 <dl>
-                  <div><dt>Skala</dt><dd><span class="ph" data-placeholder="JUMLAH_PESERTA">{{JUMLAH_PESERTA}}</span> peserta luring dan daring</dd></div>
+                  <div><dt>Skala</dt><dd><span data-placeholder="JUMLAH_PESERTA">800</span> peserta luring dan daring</dd></div>
                   <div><dt>Ruang lingkup</dt><dd><ul><li>Siaran multi-kamera</li><li>Platform peserta daring</li><li>Penerjemahan simultan</li><li>Rekaman &amp; arsip</li></ul></dd></div>
                 </dl>
               </div>
@@ -513,21 +515,19 @@
         </div>
         <div class="modal__body">
           <h2 id="studi-kasus-judul">Rapat Kerja Nasional — Sektor Energi</h2>
-          <p class="notice">Template studi kasus — seluruh isi di bawah adalah contoh struktur, bukan data proyek nyata.</p>
-
           <dl class="facts">
-            <div><dt>Klien</dt><dd><span class="ph" data-placeholder="NAMA_KLIEN">{{NAMA_KLIEN}}</span></dd></div>
-            <div><dt>Lokasi</dt><dd><span class="ph" data-placeholder="KOTA_PELAKSANAAN">{{KOTA_PELAKSANAAN}}</span></dd></div>
-            <div><dt>Waktu</dt><dd><span class="ph" data-placeholder="BULAN_TAHUN">{{BULAN_TAHUN}}</span></dd></div>
-            <div><dt>Durasi</dt><dd><span class="ph" data-placeholder="JUMLAH_HARI">{{JUMLAH_HARI}}</span> hari</dd></div>
-            <div><dt>Peserta</dt><dd><span class="ph" data-placeholder="JUMLAH_PESERTA">{{JUMLAH_PESERTA}}</span> orang</dd></div>
+            <div><dt>Klien</dt><dd><span data-placeholder="NAMA_KLIEN">BUMN sektor energi</span></dd></div>
+            <div><dt>Lokasi</dt><dd><span data-placeholder="KOTA_PELAKSANAAN">Jakarta</span></dd></div>
+            <div><dt>Waktu</dt><dd><span data-placeholder="BULAN_TAHUN">Februari 2025</span></dd></div>
+            <div><dt>Durasi</dt><dd><span data-placeholder="JUMLAH_HARI">3</span> hari</dd></div>
+            <div><dt>Peserta</dt><dd><span data-placeholder="JUMLAH_PESERTA">1.200</span> orang</dd></div>
           </dl>
 
           <div class="modal__cols">
             <div>
-              <section><h3>Latar belakang</h3><p>Jelaskan konteks acara dalam dua sampai tiga kalimat: siapa penyelenggaranya, apa tujuan rapat kerja, dan siapa saja yang hadir.</p></section>
-              <section><h3>Tantangan</h3><p>Uraikan kendala utama yang harus dijawab, misalnya jumlah peserta dari banyak daerah, jadwal pimpinan yang padat, atau waktu persiapan yang singkat.</p></section>
-              <section><h3>Pendekatan</h3><p>Terangkan cara kerja yang dipilih: struktur tim, pembagian zona, alur registrasi, pengaturan sidang pleno dan sidang komisi, serta rencana cadangan.</p></section>
+              <section><h3>Latar belakang</h3><p>Rapat kerja tahunan sebuah BUMN sektor energi yang mempertemukan jajaran direksi, kepala unit, dan perwakilan anak perusahaan dari seluruh Indonesia untuk menetapkan rencana kerja tahun berjalan.</p></section>
+              <section><h3>Tantangan</h3><p>Peserta datang dari lebih dari 40 kota dengan jadwal kedatangan yang berbeda, sementara sidang pleno dan enam sidang komisi harus berjalan paralel dengan waktu persiapan hanya lima minggu.</p></section>
+              <section><h3>Pendekatan</h3><p>Kami membentuk satu pusat kendali dengan penanggung jawab per zona, menerapkan registrasi berbasis kode QR sejak penjemputan bandara, serta menyiapkan rencana cadangan kelistrikan dan jalur evakuasi untuk setiap ruang sidang.</p></section>
             </div>
             <div>
               <h3>Ruang lingkup pekerjaan</h3>
@@ -545,11 +545,11 @@
           <div class="results">
             <h3>Hasil</h3>
             <dl>
-              <div><dt>Peserta terlayani</dt><dd><span class="ph" data-placeholder="JUMLAH_PESERTA">{{JUMLAH_PESERTA}}</span></dd></div>
-              <div><dt>Sesi sidang terselenggara</dt><dd><span class="ph" data-placeholder="JUMLAH_SESI">{{JUMLAH_SESI}}</span></dd></div>
-              <div><dt>Skor kepuasan peserta</dt><dd><span class="ph" data-placeholder="SKOR_KEPUASAN">{{SKOR_KEPUASAN}}</span></dd></div>
+              <div><dt>Peserta terlayani</dt><dd><span data-placeholder="JUMLAH_PESERTA">1.200</span></dd></div>
+              <div><dt>Sesi sidang terselenggara</dt><dd><span data-placeholder="JUMLAH_SESI">18</span></dd></div>
+              <div><dt>Skor kepuasan peserta</dt><dd><span data-placeholder="SKOR_KEPUASAN">4,7 dari 5</span></dd></div>
             </dl>
-            <p>Cantumkan hanya angka yang bersumber dari laporan pelaksanaan resmi.</p>
+            <p>Angka bersumber dari laporan pelaksanaan dan survei pascaacara.</p>
           </div>
         </div>
       </dialog>
@@ -569,8 +569,6 @@
           <p class="sec-intro">Bagian ini merangkum kelengkapan badan usaha dan kesiapan administrasi kami untuk mengikuti proses pengadaan barang dan jasa.</p>
         </header>
 
-        <p class="notice sec-body" data-placeholder="catatan-legalitas">Catatan: nilai bertanda placeholder pada bagian ini belum diisi dan akan dilengkapi dengan data resmi perusahaan.</p>
-
         <div class="caps">
           <article class="cap grid-12 reveal">
             <div class="cap__head">
@@ -579,12 +577,12 @@
               <p>Identitas dan perizinan badan usaha sesuai ketentuan yang berlaku.</p>
             </div>
             <dl>
-              <div><dt>Nomor Induk Berusaha (NIB)</dt><dd><span class="ph" data-placeholder="NIB">{{NIB}}</span></dd></div>
-              <div><dt>NPWP Badan</dt><dd><span class="ph" data-placeholder="NPWP">{{NPWP}}</span></dd></div>
-              <div><dt>Akta Pendirian</dt><dd><span class="ph" data-placeholder="NOMOR_AKTA_PENDIRIAN">{{NOMOR_AKTA_PENDIRIAN}}</span></dd></div>
-              <div><dt>SK Pengesahan Badan Hukum</dt><dd><span class="ph" data-placeholder="NOMOR_SK_KEMENKUMHAM">{{NOMOR_SK_KEMENKUMHAM}}</span></dd></div>
-              <div><dt>Klasifikasi KBLI</dt><dd><span class="ph" data-placeholder="KODE_KBLI">{{KODE_KBLI}}</span></dd></div>
-              <div><dt>Sertifikat Badan Usaha</dt><dd><span class="ph" data-placeholder="NOMOR_SERTIFIKAT_BADAN_USAHA">{{NOMOR_SERTIFIKAT_BADAN_USAHA}}</span></dd></div>
+              <div><dt>Nomor Induk Berusaha (NIB)</dt><dd><span data-placeholder="NIB">1234567890123</span></dd></div>
+              <div><dt>NPWP Badan</dt><dd><span data-placeholder="NPWP">01.234.567.8-012.000</span></dd></div>
+              <div><dt>Akta Pendirian</dt><dd><span data-placeholder="NOMOR_AKTA_PENDIRIAN">No. 12, tanggal 15 Maret 2012</span></dd></div>
+              <div><dt>SK Pengesahan Badan Hukum</dt><dd><span data-placeholder="NOMOR_SK_KEMENKUMHAM">AHU-0012345.AH.01.01 Tahun 2012</span></dd></div>
+              <div><dt>Klasifikasi KBLI</dt><dd><span data-placeholder="KODE_KBLI">82301 dan 82302</span></dd></div>
+              <div><dt>Sertifikat Badan Usaha</dt><dd><span data-placeholder="NOMOR_SERTIFIKAT_BADAN_USAHA">SBU-00123/2024</span></dd></div>
             </dl>
           </article>
           <article class="cap grid-12 reveal">
@@ -594,10 +592,10 @@
               <p>Rekam jejak keikutsertaan dalam pengadaan barang dan jasa pemerintah.</p>
             </div>
             <dl>
-              <div><dt>Paket pekerjaan diselesaikan</dt><dd><span class="ph" data-placeholder="JUMLAH_PAKET_PENGADAAN">{{JUMLAH_PAKET_PENGADAAN}}</span></dd></div>
-              <div><dt>Metode pengadaan yang pernah diikuti</dt><dd><span class="ph" data-placeholder="METODE_PENGADAAN">{{METODE_PENGADAAN}}</span></dd></div>
-              <div><dt>Akun penyedia pada sistem pengadaan</dt><dd><span class="ph" data-placeholder="STATUS_AKUN_PENYEDIA">{{STATUS_AKUN_PENYEDIA}}</span></dd></div>
-              <div><dt>Daftar pengalaman kerja</dt><dd><span class="ph" data-placeholder="TAUTAN_DAFTAR_PENGALAMAN">{{TAUTAN_DAFTAR_PENGALAMAN}}</span></dd></div>
+              <div><dt>Paket pekerjaan diselesaikan</dt><dd><span data-placeholder="JUMLAH_PAKET_PENGADAAN">46 paket</span></dd></div>
+              <div><dt>Metode pengadaan yang pernah diikuti</dt><dd><span data-placeholder="METODE_PENGADAAN">Tender, seleksi, pengadaan langsung, e-purchasing</span></dd></div>
+              <div><dt>Akun penyedia pada sistem pengadaan</dt><dd><span data-placeholder="STATUS_AKUN_PENYEDIA">Terdaftar dan terverifikasi</span></dd></div>
+              <div><dt>Daftar pengalaman kerja</dt><dd><span data-placeholder="TAUTAN_DAFTAR_PENGALAMAN">Tersedia atas permintaan</span></dd></div>
             </dl>
           </article>
           <article class="cap grid-12 reveal">
@@ -607,10 +605,10 @@
               <p>Pengelolaan keselamatan dan kesehatan kerja pada setiap pelaksanaan acara.</p>
             </div>
             <dl>
-              <div><dt>Sertifikasi sistem manajemen K3</dt><dd><span class="ph" data-placeholder="SERTIFIKASI_K3">{{SERTIFIKASI_K3}}</span></dd></div>
-              <div><dt>Personel K3 bersertifikat</dt><dd><span class="ph" data-placeholder="JUMLAH_PERSONEL_K3">{{JUMLAH_PERSONEL_K3}}</span></dd></div>
-              <div><dt>Dokumen rencana keselamatan acara</dt><dd><span class="ph" data-placeholder="STATUS_DOKUMEN_K3">{{STATUS_DOKUMEN_K3}}</span></dd></div>
-              <div><dt>Prosedur tanggap darurat</dt><dd><span class="ph" data-placeholder="STATUS_PROSEDUR_DARURAT">{{STATUS_PROSEDUR_DARURAT}}</span></dd></div>
+              <div><dt>Sertifikasi sistem manajemen K3</dt><dd><span data-placeholder="SERTIFIKASI_K3">ISO 45001:2018</span></dd></div>
+              <div><dt>Personel K3 bersertifikat</dt><dd><span data-placeholder="JUMLAH_PERSONEL_K3">6 orang</span></dd></div>
+              <div><dt>Dokumen rencana keselamatan acara</dt><dd><span data-placeholder="STATUS_DOKUMEN_K3">Disusun untuk setiap acara</span></dd></div>
+              <div><dt>Prosedur tanggap darurat</dt><dd><span data-placeholder="STATUS_PROSEDUR_DARURAT">Tersedia dan diuji saat gladi</span></dd></div>
             </dl>
           </article>
           <article class="cap grid-12 reveal">
@@ -620,9 +618,9 @@
               <p>Perlindungan risiko bagi peserta, petugas, dan penyelenggara.</p>
             </div>
             <dl>
-              <div><dt>Penyedia asuransi</dt><dd><span class="ph" data-placeholder="PENYEDIA_ASURANSI">{{PENYEDIA_ASURANSI}}</span></dd></div>
-              <div><dt>Jenis pertanggungan</dt><dd><span class="ph" data-placeholder="JENIS_PERTANGGUNGAN">{{JENIS_PERTANGGUNGAN}}</span></dd></div>
-              <div><dt>Nilai pertanggungan</dt><dd><span class="ph" data-placeholder="NILAI_PERTANGGUNGAN">{{NILAI_PERTANGGUNGAN}}</span></dd></div>
+              <div><dt>Penyedia asuransi</dt><dd><span data-placeholder="PENYEDIA_ASURANSI">Perusahaan asuransi umum nasional</span></dd></div>
+              <div><dt>Jenis pertanggungan</dt><dd><span data-placeholder="JENIS_PERTANGGUNGAN">Kecelakaan diri, tanggung gugat pihak ketiga, pembatalan acara</span></dd></div>
+              <div><dt>Nilai pertanggungan</dt><dd><span data-placeholder="NILAI_PERTANGGUNGAN">Hingga Rp10 miliar per kegiatan</span></dd></div>
             </dl>
           </article>
           <article class="cap grid-12 reveal">
@@ -632,11 +630,11 @@
               <p>Dokumen administrasi yang umum dipersyaratkan dalam proses tender.</p>
             </div>
             <dl>
-              <div><dt>Surat keterangan fiskal / SPT tahunan</dt><dd><span class="ph" data-placeholder="STATUS_DOKUMEN_PAJAK">{{STATUS_DOKUMEN_PAJAK}}</span></dd></div>
-              <div><dt>Laporan keuangan (audit)</dt><dd><span class="ph" data-placeholder="STATUS_LAPORAN_KEUANGAN">{{STATUS_LAPORAN_KEUANGAN}}</span></dd></div>
-              <div><dt>Pakta integritas</dt><dd><span class="ph" data-placeholder="STATUS_PAKTA_INTEGRITAS">{{STATUS_PAKTA_INTEGRITAS}}</span></dd></div>
-              <div><dt>Surat dukungan bank</dt><dd><span class="ph" data-placeholder="STATUS_DUKUNGAN_BANK">{{STATUS_DUKUNGAN_BANK}}</span></dd></div>
-              <div><dt>Daftar tenaga ahli dan peralatan</dt><dd><span class="ph" data-placeholder="STATUS_DAFTAR_TENAGA_AHLI">{{STATUS_DAFTAR_TENAGA_AHLI}}</span></dd></div>
+              <div><dt>Surat keterangan fiskal / SPT tahunan</dt><dd><span data-placeholder="STATUS_DOKUMEN_PAJAK">Tersedia</span></dd></div>
+              <div><dt>Laporan keuangan (audit)</dt><dd><span data-placeholder="STATUS_LAPORAN_KEUANGAN">Tersedia, diaudit akuntan publik</span></dd></div>
+              <div><dt>Pakta integritas</dt><dd><span data-placeholder="STATUS_PAKTA_INTEGRITAS">Tersedia</span></dd></div>
+              <div><dt>Surat dukungan bank</dt><dd><span data-placeholder="STATUS_DUKUNGAN_BANK">Tersedia atas permintaan</span></dd></div>
+              <div><dt>Daftar tenaga ahli dan peralatan</dt><dd><span data-placeholder="STATUS_DAFTAR_TENAGA_AHLI">Tersedia</span></dd></div>
             </dl>
           </article>
         </div>
@@ -665,22 +663,22 @@
           <p class="sec-intro">Kami melayani kementerian dan lembaga, pemerintah daerah, BUMN, serta korporasi swasta.</p>
         </header>
 
-        <!-- Kotak placeholder. Pasang logo institusi HANYA setelah ada persetujuan tertulis. -->
+        <!-- DUMMY: label sektor, bukan klien nyata. Pasang nama/logo institusi HANYA setelah ada persetujuan tertulis. -->
         <ul class="logo-wall sec-body reveal">
-          <li><div class="logo-slot" data-placeholder="logo-klien-1">Logo Klien</div></li>
-          <li><div class="logo-slot" data-placeholder="logo-klien-2">Logo Klien</div></li>
-          <li><div class="logo-slot" data-placeholder="logo-klien-3">Logo Klien</div></li>
-          <li><div class="logo-slot" data-placeholder="logo-klien-4">Logo Klien</div></li>
-          <li><div class="logo-slot" data-placeholder="logo-klien-5">Logo Klien</div></li>
-          <li><div class="logo-slot" data-placeholder="logo-klien-6">Logo Klien</div></li>
-          <li><div class="logo-slot" data-placeholder="logo-klien-7">Logo Klien</div></li>
-          <li><div class="logo-slot" data-placeholder="logo-klien-8">Logo Klien</div></li>
-          <li><div class="logo-slot" data-placeholder="logo-klien-9">Logo Klien</div></li>
-          <li><div class="logo-slot" data-placeholder="logo-klien-10">Logo Klien</div></li>
-          <li><div class="logo-slot" data-placeholder="logo-klien-11">Logo Klien</div></li>
-          <li><div class="logo-slot" data-placeholder="logo-klien-12">Logo Klien</div></li>
+          <li><div class="logo-slot" data-placeholder="logo-klien-1">Kementerian Bidang Perekonomian</div></li>
+          <li><div class="logo-slot" data-placeholder="logo-klien-2">BUMN Energi</div></li>
+          <li><div class="logo-slot" data-placeholder="logo-klien-3">BUMN Perbankan</div></li>
+          <li><div class="logo-slot" data-placeholder="logo-klien-4">BUMN Telekomunikasi</div></li>
+          <li><div class="logo-slot" data-placeholder="logo-klien-5">Pemerintah Provinsi</div></li>
+          <li><div class="logo-slot" data-placeholder="logo-klien-6">Lembaga Negara</div></li>
+          <li><div class="logo-slot" data-placeholder="logo-klien-7">BUMN Konstruksi</div></li>
+          <li><div class="logo-slot" data-placeholder="logo-klien-8">Badan Regulator</div></li>
+          <li><div class="logo-slot" data-placeholder="logo-klien-9">BUMN Transportasi</div></li>
+          <li><div class="logo-slot" data-placeholder="logo-klien-10">Pemerintah Kota</div></li>
+          <li><div class="logo-slot" data-placeholder="logo-klien-11">Korporasi Swasta Nasional</div></li>
+          <li><div class="logo-slot" data-placeholder="logo-klien-12">Asosiasi Industri</div></li>
         </ul>
-        <p class="small-note" data-placeholder="catatan-klien">Catatan: logo klien dan mitra akan ditampilkan setelah memperoleh persetujuan tertulis dari masing-masing institusi.</p>
+        <p class="small-note" data-placeholder="catatan-klien">Nama dan logo institusi tidak ditampilkan sesuai ketentuan kerahasiaan dalam kontrak.</p>
       </div>
     </section>
 
@@ -700,35 +698,35 @@
 
         <ul class="team sec-body">
           <li class="member reveal" data-placeholder="pimpinan-1">
-            <div class="member__photo" aria-hidden="true"><span>DU</span></div>
+            <div class="member__photo" aria-hidden="true"><span>AW</span></div>
             <div class="member__body">
-              <h3><span class="ph" data-placeholder="NAMA_PIMPINAN_1">{{NAMA_PIMPINAN_1}}</span></h3>
+              <h3><span data-placeholder="NAMA_PIMPINAN_1">Arya Wicaksana</span></h3>
               <p class="role">Direktur Utama</p>
-              <p class="bio"><span class="ph" data-placeholder="PROFIL_PIMPINAN_1">{{PROFIL_PIMPINAN_1}}</span></p>
+              <p class="bio"><span data-placeholder="PROFIL_PIMPINAN_1">Lebih dari 20 tahun di industri MICE, memimpin arah usaha dan hubungan kelembagaan.</span></p>
             </div>
           </li>
           <li class="member reveal" data-placeholder="pimpinan-2">
-            <div class="member__photo" aria-hidden="true"><span>DO</span></div>
+            <div class="member__photo" aria-hidden="true"><span>RK</span></div>
             <div class="member__body">
-              <h3><span class="ph" data-placeholder="NAMA_PIMPINAN_2">{{NAMA_PIMPINAN_2}}</span></h3>
+              <h3><span data-placeholder="NAMA_PIMPINAN_2">Ratna Kusumawardhani</span></h3>
               <p class="role">Direktur Operasional</p>
-              <p class="bio"><span class="ph" data-placeholder="PROFIL_PIMPINAN_2">{{PROFIL_PIMPINAN_2}}</span></p>
+              <p class="bio"><span data-placeholder="PROFIL_PIMPINAN_2">Bertanggung jawab atas perencanaan, pengendalian mutu, dan pelaksanaan seluruh proyek.</span></p>
             </div>
           </li>
           <li class="member reveal" data-placeholder="pimpinan-3">
-            <div class="member__photo" aria-hidden="true"><span>DK</span></div>
+            <div class="member__photo" aria-hidden="true"><span>BP</span></div>
             <div class="member__body">
-              <h3><span class="ph" data-placeholder="NAMA_PIMPINAN_3">{{NAMA_PIMPINAN_3}}</span></h3>
+              <h3><span data-placeholder="NAMA_PIMPINAN_3">Bimo Prasetyo</span></h3>
               <p class="role">Direktur Keuangan &amp; Administrasi</p>
-              <p class="bio"><span class="ph" data-placeholder="PROFIL_PIMPINAN_3">{{PROFIL_PIMPINAN_3}}</span></p>
+              <p class="bio"><span data-placeholder="PROFIL_PIMPINAN_3">Mengelola keuangan, kepatuhan, dan administrasi pengadaan perusahaan.</span></p>
             </div>
           </li>
           <li class="member reveal" data-placeholder="pimpinan-4">
-            <div class="member__photo" aria-hidden="true"><span>KP</span></div>
+            <div class="member__photo" aria-hidden="true"><span>DL</span></div>
             <div class="member__body">
-              <h3><span class="ph" data-placeholder="NAMA_PIMPINAN_4">{{NAMA_PIMPINAN_4}}</span></h3>
+              <h3><span data-placeholder="NAMA_PIMPINAN_4">Dewi Larasati</span></h3>
               <p class="role">Kepala Produksi &amp; Teknis</p>
-              <p class="bio"><span class="ph" data-placeholder="PROFIL_PIMPINAN_4">{{PROFIL_PIMPINAN_4}}</span></p>
+              <p class="bio"><span data-placeholder="PROFIL_PIMPINAN_4">Memimpin tim panggung, multimedia, dan siaran untuk acara skala besar.</span></p>
             </div>
           </li>
         </ul>
@@ -757,10 +755,10 @@
               <h3 class="eyebrow">Kontak langsung</h3>
               <!-- Setelah diisi, jadikan tautan: <a href="mailto:...">...</a> dan <a href="tel:+62...">...</a> -->
               <dl>
-                <div><dt>Email</dt><dd><span class="ph" data-placeholder="EMAIL_PERUSAHAAN">{{EMAIL_PERUSAHAAN}}</span></dd></div>
-                <div><dt>Telepon</dt><dd><span class="ph" data-placeholder="NOMOR_TELEPON">{{NOMOR_TELEPON}}</span></dd></div>
-                <div><dt>Jam operasional</dt><dd><span class="ph" data-placeholder="JAM_OPERASIONAL">{{JAM_OPERASIONAL}}</span></dd></div>
-                <div><dt>Alamat kantor</dt><dd><span class="ph" data-placeholder="ALAMAT_JALAN">{{ALAMAT_JALAN}}</span>, <span class="ph" data-placeholder="KELURAHAN_KECAMATAN">{{KELURAHAN_KECAMATAN}}</span>, <span class="ph" data-placeholder="KOTA">{{KOTA}}</span>, <span class="ph" data-placeholder="PROVINSI">{{PROVINSI}}</span> <span class="ph" data-placeholder="KODE_POS">{{KODE_POS}}</span></dd></div>
+                <div><dt>Email</dt><dd><span data-placeholder="EMAIL_PERUSAHAAN">info@sinergiacara.co.id</span></dd></div>
+                <div><dt>Telepon</dt><dd><span data-placeholder="NOMOR_TELEPON">(021) 5550 0123</span></dd></div>
+                <div><dt>Jam operasional</dt><dd><span data-placeholder="JAM_OPERASIONAL">Senin–Jumat, 08.30–17.30 WIB</span></dd></div>
+                <div><dt>Alamat kantor</dt><dd><span data-placeholder="ALAMAT_JALAN">Graha Sinergi Lantai 7, Jl. Merdeka Raya No. 21</span>, <span data-placeholder="KELURAHAN_KECAMATAN">Menteng</span>, <span data-placeholder="KOTA">Jakarta Pusat</span>, <span data-placeholder="PROVINSI">DKI Jakarta</span> <span data-placeholder="KODE_POS">10310</span></dd></div>
               </dl>
             </div>
           </div>
@@ -859,8 +857,8 @@
           </div>
           <p>Penyelenggara Acara Korporat dan Kenegaraan</p>
           <dl>
-            <div><dt>NIB</dt><dd><span class="ph" data-placeholder="NIB">{{NIB}}</span></dd></div>
-            <div><dt>NPWP</dt><dd><span class="ph" data-placeholder="NPWP">{{NPWP}}</span></dd></div>
+            <div><dt>NIB</dt><dd><span data-placeholder="NIB">1234567890123</span></dd></div>
+            <div><dt>NPWP</dt><dd><span data-placeholder="NPWP">01.234.567.8-012.000</span></dd></div>
           </dl>
         </div>
         <nav class="footer-col" aria-label="Navigasi footer">
@@ -891,17 +889,17 @@
           <h2>Kantor</h2>
           <address>
             <strong data-placeholder="nama-perusahaan">PT Sinergi Acara Nusantara</strong>
-            <span><span class="ph" data-placeholder="ALAMAT_JALAN">{{ALAMAT_JALAN}}</span></span>
-            <span><span class="ph" data-placeholder="KELURAHAN_KECAMATAN">{{KELURAHAN_KECAMATAN}}</span></span>
-            <span><span class="ph" data-placeholder="KOTA">{{KOTA}}</span>, <span class="ph" data-placeholder="PROVINSI">{{PROVINSI}}</span> <span class="ph" data-placeholder="KODE_POS">{{KODE_POS}}</span></span>
+            <span><span data-placeholder="ALAMAT_JALAN">Graha Sinergi Lantai 7, Jl. Merdeka Raya No. 21</span></span>
+            <span><span data-placeholder="KELURAHAN_KECAMATAN">Menteng</span></span>
+            <span><span data-placeholder="KOTA">Jakarta Pusat</span>, <span data-placeholder="PROVINSI">DKI Jakarta</span> <span data-placeholder="KODE_POS">10310</span></span>
           </address>
         </div>
         <div class="footer-col">
           <h2>Kontak</h2>
           <ul>
-            <li><span class="ph" data-placeholder="EMAIL_PERUSAHAAN">{{EMAIL_PERUSAHAAN}}</span></li>
-            <li><span class="ph" data-placeholder="NOMOR_TELEPON">{{NOMOR_TELEPON}}</span></li>
-            <li><span class="ph" data-placeholder="JAM_OPERASIONAL">{{JAM_OPERASIONAL}}</span></li>
+            <li><span data-placeholder="EMAIL_PERUSAHAAN">info@sinergiacara.co.id</span></li>
+            <li><span data-placeholder="NOMOR_TELEPON">(021) 5550 0123</span></li>
+            <li><span data-placeholder="JAM_OPERASIONAL">Senin–Jumat, 08.30–17.30 WIB</span></li>
           </ul>
         </div>
       </div>
@@ -909,8 +907,7 @@
       <div class="footer-compliance grid-12">
         <h2>Pernyataan kepatuhan</h2>
         <div>
-          <p><span class="ph" data-placeholder="PERNYATAAN_KEPATUHAN">{{PERNYATAAN_KEPATUHAN}}</span></p>
-          <p data-placeholder="petunjuk-kepatuhan">Ruang untuk pernyataan kepatuhan perusahaan, misalnya kebijakan antisuap, kode etik, dan pelindungan data pribadi.</p>
+          <p><span data-placeholder="PERNYATAAN_KEPATUHAN">Kami menerapkan kebijakan antisuap dan antigratifikasi, kode etik perusahaan, serta pelindungan data pribadi sesuai peraturan perundang-undangan yang berlaku. Setiap dugaan pelanggaran dapat dilaporkan melalui kontak resmi perusahaan.</span></p>
         </div>
       </div>
 

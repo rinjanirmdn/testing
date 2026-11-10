@@ -4,9 +4,11 @@ Website satu halaman untuk perusahaan event organizer yang menyasar korporasi, B
 dan instansi pemerintah. Dibuat dengan **HTML, CSS, dan JavaScript biasa** — tanpa
 Node.js, tanpa proses build, tanpa instalasi apa pun.
 
-> **Status: kerangka dengan konten placeholder.** Nama perusahaan, angka, nomor
-> legalitas, klien, tim, dan studi kasus belum berisi data nyata. Halaman masih diberi
-> tanda `noindex` agar tidak muncul di mesin pencari.
+> **Status: versi demo berisi DATA DUMMY.** Angka, nomor legalitas, nama pimpinan,
+> alamat, kontak, daftar klien, dan studi kasus di halaman ini karangan untuk keperluan
+> tampilan, bukan data perusahaan nyata. Halaman diberi tanda `noindex` agar tidak
+> muncul di mesin pencari. **Jangan dipakai untuk penawaran atau tender sebelum seluruh
+> data diganti dengan data resmi.**
 
 ## Isi repositori
 
@@ -30,73 +32,27 @@ assets/favicon.svg    ikon tab peramban
 Buka `index.html` di editor teks apa pun, ubah teksnya, simpan, lalu push. Setiap
 section diberi komentar pembatas, misalnya `<!-- ===== 02 LAYANAN ===== -->`.
 
-## Placeholder
+## Data dummy dan cara menggantinya
 
-Ada tiga penanda, semuanya bisa dicari dengan Ctrl+F di `index.html`:
+Setiap nilai dummy di `index.html` dibungkus elemen beratribut `data-placeholder="..."`,
+misalnya `<span data-placeholder="NIB">1234567890123</span>`. Cari `data-placeholder`
+(Ctrl+F) untuk menemukan semuanya, ganti isinya dengan data resmi, lalu hapus atributnya.
 
-| Penanda | Arti |
-| --- | --- |
-| `{{NAMA_TOKEN}}` | Data faktual yang belum diisi. Tampil di halaman dengan gaya monospace bergaris putus-putus. |
-| `data-placeholder="..."` | Atribut pada setiap elemen yang isinya belum final. |
-| `PLACEHOLDER` | Komentar pada bagian teknis yang harus ditinjau (SEO, formulir). |
+## Daftar periksa sebelum dipakai sungguhan
 
-Untuk mengisi sebuah token, ganti seluruh elemennya, misalnya
-`<span class="ph" data-placeholder="NIB">{{NIB}}</span>` menjadi nomor yang sebenarnya.
-
-**Aturan isi:** isi hanya dengan data yang dapat dipertanggungjawabkan. Jangan memasang
-angka perkiraan, nomor legalitas contoh, nama atau logo klien, maupun testimoni tanpa
-dasar dan izin tertulis.
-
-## Daftar periksa sebelum dipublikasikan
-
-### Identitas perusahaan
-- [ ] Nama `PT Sinergi Acara Nusantara` — cari-ganti di `index.html` (judul, metadata, footer, JSON-LD)
-- [ ] Teks logo `Sinergi Acara` dan `NUSANTARA` di dalam `<svg>` logo (dua tempat: header dan footer); sesuaikan angka lebar pada `viewBox` bila panjang nama berubah
-- [ ] Tagline `Penyelenggara Acara Korporat dan Kenegaraan`
-- [ ] Kontak: `{{EMAIL_PERUSAHAAN}}`, `{{NOMOR_TELEPON}}`, `{{JAM_OPERASIONAL}}` — jadikan tautan `mailto:` / `tel:` setelah diisi
-- [ ] Alamat: `{{ALAMAT_JALAN}}`, `{{KELURAHAN_KECAMATAN}}`, `{{KOTA}}`, `{{PROVINSI}}`, `{{KODE_POS}}`
-
-### Hero
-- [ ] `{{TAHUN_BERDIRI}}`, `{{JUMLAH_EVENT}}`, `{{JUMLAH_KLIEN}}`, `{{JUMLAH_PROVINSI}}`
-
-### Naskah
-- [ ] Judul hero, narasi Tentang Kami, visi, misi, nilai kerja, deskripsi layanan, dan metodologi adalah draf — tinjau agar sesuai kondisi perusahaan yang sebenarnya
-- [ ] Kalimat section Klien ("Institusi yang telah bekerja bersama kami", "Kami melayani kementerian…") hanya dipertahankan bila memang benar
-
-### Portofolio
-- [ ] Enam kartu berjudul generik dengan skala `{{JUMLAH_PESERTA}}` — ganti dengan proyek aktual
-- [ ] Template studi kasus (blok `<dialog id="studi-kasus">`): `{{NAMA_KLIEN}}`, `{{KOTA_PELAKSANAAN}}`, `{{BULAN_TAHUN}}`, `{{JUMLAH_HARI}}`, `{{JUMLAH_PESERTA}}`, `{{JUMLAH_SESI}}`, `{{SKOR_KEPUASAN}}`, dan teks petunjuk Latar belakang / Tantangan / Pendekatan
-- [ ] Hapus label `Visual ilustrasi` (baris `<span class="badge">`) pada kartu yang fotonya sudah dokumentasi asli
-- [ ] Hapus catatan "contoh format" di atas grid
-
-### Kapabilitas & Legalitas
-- [ ] Badan usaha: `{{NIB}}`, `{{NPWP}}`, `{{NOMOR_AKTA_PENDIRIAN}}`, `{{NOMOR_SK_KEMENKUMHAM}}`, `{{KODE_KBLI}}`, `{{NOMOR_SERTIFIKAT_BADAN_USAHA}}`
-- [ ] Pengadaan: `{{JUMLAH_PAKET_PENGADAAN}}`, `{{METODE_PENGADAAN}}`, `{{STATUS_AKUN_PENYEDIA}}`, `{{TAUTAN_DAFTAR_PENGALAMAN}}`
-- [ ] K3: `{{SERTIFIKASI_K3}}`, `{{JUMLAH_PERSONEL_K3}}`, `{{STATUS_DOKUMEN_K3}}`, `{{STATUS_PROSEDUR_DARURAT}}`
-- [ ] Asuransi: `{{PENYEDIA_ASURANSI}}`, `{{JENIS_PERTANGGUNGAN}}`, `{{NILAI_PERTANGGUNGAN}}`
-- [ ] Dokumen tender: `{{STATUS_DOKUMEN_PAJAK}}`, `{{STATUS_LAPORAN_KEUANGAN}}`, `{{STATUS_PAKTA_INTEGRITAS}}`, `{{STATUS_DUKUNGAN_BANK}}`, `{{STATUS_DAFTAR_TENAGA_AHLI}}`
-- [ ] Hapus baris yang tidak relevan dan catatan placeholder di atasnya
-
-### Klien, tim, footer
-- [ ] 12 kotak `Logo Klien` — pasang logo hanya dengan izin tertulis; hapus catatan di bawahnya
-- [ ] Tim: `{{NAMA_PIMPINAN_1..4}}`, `{{PROFIL_PIMPINAN_1..4}}`, inisial, dan jabatan
-- [ ] Footer: `{{PERNYATAAN_KEPATUHAN}}` dan hapus kalimat petunjuk di bawahnya
-
-### Foto — lihat `IMAGES.md`
-- [ ] Sembilan foto di `assets/images/`, lalu aktifkan baris `<img>` masing-masing
-
-### Formulir — `assets/js/main.js`
-- [ ] Fungsi `submitInquiry()` saat ini **hanya simulasi**: formulir menampilkan pesan sukses tetapi tidak mengirim apa pun. GitHub Pages tidak punya server, jadi formulir perlu disambungkan ke layanan formulir atau API perusahaan; petunjuknya ada di komentar fungsi tersebut
-- [ ] Sesuaikan pernyataan privasi di bawah formulir
-
-### SEO — bagian `<head>` di `index.html`
-- [ ] Hapus `<meta name="robots" content="noindex, nofollow">` saat situs siap publik
-- [ ] Aktifkan `canonical`, `og:url`, dan `og:image` dengan domain final
-- [ ] Lengkapi JSON-LD (alamat, telepon, email, url) dengan data resmi
-
-### Pemeriksaan akhir
-- [ ] Ctrl+F `{{` di `index.html` tidak menemukan apa pun
-- [ ] Ctrl+F `data-placeholder` hanya tersisa pada elemen yang memang sudah ditinjau
+- [ ] **Nama perusahaan** `PT Sinergi Acara Nusantara` (placeholder) — cari-ganti di `index.html`, termasuk teks logo `Sinergi Acara` / `NUSANTARA` di dua `<svg>` (header dan footer) dan tagline
+- [ ] **Hero:** tahun berdiri, jumlah acara, jumlah klien, jumlah provinsi
+- [ ] **Naskah:** narasi Tentang Kami, visi, misi, nilai kerja, layanan, metodologi — tinjau agar sesuai kondisi perusahaan
+- [ ] **Portofolio:** enam studi kasus dan isi modal (klien, lokasi, waktu, angka hasil) seluruhnya karangan
+- [ ] **Legalitas:** NIB, NPWP, akta, SK, KBLI, sertifikat, pengalaman pengadaan, K3, asuransi, dokumen tender — semua dummy; nomor resmi wajib menggantikannya
+- [ ] **Klien:** 12 label sektor anonim; nama atau logo institusi hanya dipasang dengan izin tertulis
+- [ ] **Tim:** empat nama dan profil fiktif
+- [ ] **Kontak dan alamat:** email, telepon, jam operasional, alamat kantor fiktif — setelah diisi, jadikan tautan `mailto:` / `tel:`
+- [ ] **Footer:** pernyataan kepatuhan, NIB, NPWP
+- [ ] **Foto:** foto stok berlisensi bebas (sumber di `IMAGES.md`) — ganti dengan dokumentasi asli, lalu hapus label `Visual ilustrasi` (baris `<span class="badge">`)
+- [ ] **Formulir** (`assets/js/main.js`): `submitInquiry()` masih simulasi — menampilkan pesan sukses tetapi tidak mengirim apa pun. GitHub Pages tidak punya server, jadi sambungkan ke layanan formulir atau API perusahaan (petunjuk ada di komentar fungsi)
+- [ ] **SEO** (`<head>`): hapus `noindex`, aktifkan `canonical` / `og:url` / `og:image` dengan domain final, lengkapi JSON-LD
+- [ ] **Pemeriksaan akhir:** Ctrl+F `data-placeholder` tidak lagi menemukan data yang belum ditinjau
 
 ## Catatan desain dan aksesibilitas
 
