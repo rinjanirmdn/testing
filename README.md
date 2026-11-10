@@ -21,6 +21,16 @@ npm run dev
 Perintah lain: `npm run build`, `npm run start`, `npm run lint`, `npm run typecheck`,
 dan `npm run placeholders` (menampilkan semua placeholder yang tersisa di kode).
 
+## Pratinjau di GitHub Pages
+
+Workflow `.github/workflows/deploy-pages.yml` membangun situs sebagai file statis dan
+menerbitkannya ke GitHub Pages setiap ada push. Syaratnya satu kali saja: di GitHub buka
+**Settings → Pages → Build and deployment → Source**, pilih **GitHub Actions**.
+
+Catatan mode Pages: optimasi gambar `next/image` dimatikan (Pages hanya menyajikan file
+statis) dan halaman diberi `noindex`. Untuk produksi, gunakan hosting yang menjalankan
+Next.js agar optimasi gambar aktif.
+
 ## Struktur
 
 ```

@@ -9,6 +9,9 @@ export const alt = `${company.legalName} — ${company.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
+// Wajib statis agar ikut terekspor pada build GitHub Pages.
+export const dynamic = "force-static";
+
 export default function OpenGraphImage() {
   return new ImageResponse(
     (

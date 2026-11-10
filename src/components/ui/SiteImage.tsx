@@ -22,6 +22,9 @@ interface SiteImageProps {
   className?: string;
 }
 
+/** Sub-path situs (kosong, kecuali saat di-deploy ke GitHub Pages). */
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 /**
  * Satu-satunya pintu untuk menampilkan foto.
  * - File ada      -> next/image (sizes responsif, blur placeholder, rasio terkunci).
@@ -45,7 +48,7 @@ export function SiteImage({
     <div className={`${wrapperClass} overflow-hidden bg-stone ${className}`} style={wrapperStyle}>
       {image.available ? (
         <Image
-          src={image.src}
+          src={`${BASE_PATH}${image.src}`}
           alt={image.alt}
           fill
           sizes={sizes}

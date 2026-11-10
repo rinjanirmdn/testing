@@ -19,6 +19,8 @@ const sans = Public_Sans({
 });
 
 const content = getContent(defaultLocale);
+// Pratinjau di GitHub Pages tidak boleh diindeks mesin pencari.
+const allowIndexing = company.allowIndexing && process.env.GITHUB_PAGES !== "true";
 const title = `${company.legalName} — ${content.meta.titleSuffix}`;
 
 export const metadata: Metadata = {
@@ -45,7 +47,7 @@ export const metadata: Metadata = {
     title,
     description: content.meta.description,
   },
-  robots: company.allowIndexing
+  robots: allowIndexing
     ? { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } }
     : { index: false, follow: false },
 };
